@@ -7,5 +7,15 @@ authors:
     given-names: Shintaro
 repository-code: "https://github.com/izaqsee/social-oscillation-model.git"
 license: MIT
+keywords:
+  - self-excitation
+  - social dynamics
+  - social media
+  - collective behavior
+  - synchronization
+  - phase transition
+  - network science
+  - agent-based modeling
+  - control theory
 version: 0.1.0
 date-released: 2026-02-06
