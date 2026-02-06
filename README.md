@@ -108,6 +108,16 @@ Outputs are saved in `./out/`:
 - `sweep_kernel_fraction.png`  
   (steady-state metrics vs. kernel fraction)
 
+### Example outputs
+
+**Time series (M(t), E(t))**
+
+![](assets/timeseries.png)
+
+**Sweep: kernel fraction vs steady-state metrics**
+
+![](assets/sweep_kernel_fraction.png)
+
 ---
 
 ## Companion project
