@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18501379.svg)](https://doi.org/10.5281/zenodo.18501379)
+
+
 # Social Oscillation Model  
 **Emergence of self-excitation in communication-mediated social networks**
 
@@ -169,7 +172,14 @@ MIT (see LICENSE).
 
 ## How to cite
 
+If you use this model in your work, please cite:
 See `CITATION.cff` (works with GitHub citation UI).
+
+Aizawa, S. (2026).  
+Social Oscillation Model.  
+Zenodo.  
+https://doi.org/10.5281/zenodo.18501379
+
 
 ---
 
