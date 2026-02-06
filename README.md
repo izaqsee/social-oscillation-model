@@ -35,23 +35,23 @@ At each step, agents update based on:
 pip install -r requirements.txt
 python simulation.py
 
-##Outputs
+## Outputs
 Outputs are saved in ./out/:
 
 timeseries.png (M(t), E(t))
 
 sweep_kernel_fraction.png (kernel fraction vs steady-state order parameter)
 
-##Companion project
+## Companion project
 
 A stabilization proposal based on intentional decoupling / low-pass filtering:
 
 (planned) social-lpf (separate repository)
 
-##License
+## License
 
 MIT (see LICENSE).
 
-##How to cite
+## How to cite
 
 See CITATION.cff (works with GitHub citation UI).

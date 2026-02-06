@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Aizawa
     given-names: Shintaro
-repository-code: "https://github.com/<YOUR_GITHUB>/<REPO_NAME>"
+repository-code: "https://github.com/izaqsee/social-oscillation-model.git"
 license: MIT
 version: 0.1.0
 date-released: 2026-02-06
