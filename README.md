@@ -33,6 +33,39 @@ The repository contains a minimal agent-based network simulation that:
 
 ---
 
+## Model dynamics (minimal form)
+
+Each agent state \(x_i(t)\) evolves according to:
+
+\[
+x_i(t+1) = \tanh \Big(
+\alpha x_i(t)
++ (1-\alpha)\big(
+I_i \cdot f(\text{neighbors}_i)
+- L_i x_i(t)
++ \eta_i(t)
+\big)
+\Big)
+\]
+
+where:
+
+- \(L_i\): damping (verbalization / stabilization tendency)
+- \(I_i\): internalization gain (susceptibility to neighbors)
+- \(\eta_i\): stochastic noise
+- \(f(\cdot)\): nonlinear neighbor influence with extreme amplification
+- \(\alpha\): inertia term
+
+Kernel agents are defined as agents with:
+
+- high \(I_i\)
+- low \(L_i\)
+- lower saturation threshold
+
+This produces a population with heterogeneous self-excitation tendencies.
+
+---
+
 ## Research Intent
 
 The model serves as:
@@ -138,9 +171,6 @@ MIT (see LICENSE).
 
 See `CITATION.cff` (works with GitHub citation UI).
 
-
----
-
 ---
 
 # 日本語版概要
@@ -191,6 +221,39 @@ See `CITATION.cff` (works with GitHub citation UI).
 
 ---
 
+## モデルの更新則（簡略形）
+
+各エージェントの状態 \(x_i(t)\) は次式で更新される：
+
+\[
+x_i(t+1) = \tanh \Big(
+\alpha x_i(t)
++ (1-\alpha)\big(
+I_i \cdot f(\text{近傍状態})
+- L_i x_i(t)
++ \eta_i(t)
+\big)
+\Big)
+\]
+
+ここで：
+
+- \(L_i\)：減衰係数（言語化・安定化傾向）
+- \(I_i\)：内在化ゲイン（他者影響の受けやすさ）
+- \(\eta_i\)：ノイズ
+- \(f(\cdot)\)：極端値を強調する非線形近傍影響
+- \(\alpha\)：慣性項
+
+カーネル個体は：
+
+- 高い \(I_i\)
+- 低い \(L_i\)
+- 低いサチュレーション閾値
+
+を持つ個体として定義される。
+
+---
+
 ## 研究上の位置づけ
 
 本モデルは：
@@ -206,8 +269,6 @@ See `CITATION.cff` (works with GitHub citation UI).
   - 社会的フィードバックループへのローパスフィルタ導入
 
 ---
-
-# 日本語補足
 
 ## パラメータ（実装レベル）
 
